@@ -1,0 +1,5 @@
+{
+  "name": "Customer NIK Manager for LPG 3Kg",
+  "description": "An application to manage customer data (NIK) for subsidized 3Kg LPG distribution. It allows adding, searching, filtering, deleting, importing, and exporting customer information. All data is stored locally in the browser.",
+  "requestFramePermissions": []
+}
