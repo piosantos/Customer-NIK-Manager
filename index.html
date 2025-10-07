@@ -36,10 +36,9 @@
 <script type="importmap">
 {
   "imports": {
-    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "path": "https://aistudiocdn.com/path@^0.12.7",
     "url": "https://aistudiocdn.com/url@^0.11.4",
     "vite": "https://aistudiocdn.com/vite@^7.1.9",
@@ -50,22 +49,6 @@
 </head>
 <body class="bg-gray-100">
     <div id="root"></div>
-    <script type="module">
-        // This script provides a robust loading mechanism.
-        // 1. It first attempts to load the source TypeScript file (`index.tsx`).
-        //    This works in development environments with a server like Vite.
-        // 2. If that fails (e.g., when opening the file directly in a browser
-        //    that can't process TypeScript), it catches the error.
-        // 3. It then falls back to loading the pre-built JavaScript bundle,
-        //    ensuring the application always runs.
-        (async () => {
-            try {
-                await import('./index.tsx');
-            } catch (error) {
-                console.warn('Failed to load TypeScript module. Falling back to prebuilt JavaScript bundle.', error);
-                await import('./prebuilt/app.js');
-            }
-        })();
-    </script>
+    <script type="module" src="./prebuilt/app.js"></script>
 </body>
 </html>

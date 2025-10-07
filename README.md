@@ -52,7 +52,7 @@ There is **no backend, no database, and no server**. It's just a set of static f
 
 Using the application is incredibly simple:
 
-1.  **Open the App:** Simply open the `index.html` file in your web browser. The page will try to load the TypeScript source when available (e.g. during local development with Vite). If the browser cannot execute TypeScript modules—such as when the file is opened directly from disk—it automatically falls back to the bundled script located at `prebuilt/app.js` so the full experience still loads.
+1.  **Open the App:** Simply open the `index.html` file in your web browser. The app will load directly from the pre-built `prebuilt/app.js` file.
 2.  **Add Your First Customer:** Use the "Tambah Pelanggan Baru" form to add your customers' details. The app includes real-time NIK validation to prevent errors.
 3.  **Log Purchases:** Click the **"Beli"** button on a customer's card to log a transaction for the current week.
 4.  **Transact on MyPertamina:** When a customer is ready to buy, click the **"Transaksi"** button. Their NIK is instantly copied, and you're taken directly to the MyPertamina site to complete the official verification.
